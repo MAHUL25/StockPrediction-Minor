@@ -1,0 +1,222 @@
+body {
+    background-color:#FFF;
+    display: absolute;
+    overflow-y: auto;
+    min-height: 100vh;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.uparkamala{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar{
+  flex: 1;  
+  
+}
+
+
+
+.logoo{
+   max-width: 180px;
+   
+}
+.logoo img{ max-width: 100%;}
+
+.navbar nav { display: flex; 
+}
+
+.navbar ul{
+    display: flex;
+    margin-left: auto;
+    
+}
+
+.navbar ul li{
+    
+    list-style: none;
+    margin: 0 15px;
+    
+}
+
+
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    padding-top: 18%;
+    background-image: url('../images/stockk.jpg');
+    background-size: cover;
+    background-position: top center;
+    opacity: 0.7;
+    width: auto;
+    padding-bottom: 31%;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    background: #318b8f;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 2px solid white;
+    margin: 0 auto;
+}
+
+input[type="search"] {
+    padding: 10px 80px 10px 8px;
+    flex: 1;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: whitesmoke;
+    background: transparent;
+}
+
+input[type="search"]::placeholder{
+    text-align: left ;
+    color: white;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button img {
+    width: 20px; 
+    height: 20px; 
+}
+
+#home{
+    color: #8790C8;
+}
+
+.navbar li a{
+    color: #FFF;
+    text-decoration: none;
+    font-family: 'Verdana', serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 5px 0;
+    display: inline-block;
+}
+
+.navbar li a:hover {
+    color: lightpink;
+}
+
+.header {
+    position: fixed; /* Make the header fixed */
+    top: 0; /* Stick it to the top of the viewport */
+    width: 100%; /* Make it span the entire width */
+    z-index: 1000;
+    left: 0;
+    right: 0;
+
+}
+
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+/* #analytics1  {
+    position: absolute;
+    align-items: center;
+    width: 15%;
+    padding: 10px;
+  } */
+
+.white-icon{
+    color: white;
+}
+
+#analytics1 {
+    position: absolute;
+    top: calc(150% + 20px); 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 15%;
+    height: 400px;
+
+}
+#analytics2  {
+    margin-left: 12%;
+    margin-top: 40%;
+  }
+#analytics3  {
+    float: left;
+    width: 15%;
+    /* flex: 33.33%; */
+    padding: 5px;
+    margin-top: 60%;
+  }
+#analytics4  {
+
+    /* width: 15%; */
+    /* flex: 33.33%; */
+    padding: 5px;
+    margin-top: 60%;
+    padding-left: 54%;
+  }
+#analytics5  {
+    float: left;
+    /* width: 1%; */
+    /* flex: 33.33%; */
+    padding: 5px;
+    margin-top: 40%;
+    padding-right: 25%;
+  }
+  
+
+  .imagecontainer::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .imagecontainer {
+    display: none;
+    display: flex;
+  }
+  
+  #imageContainer img {
+    max-width: 25%; /* Ensure images don't exceed 25% of container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.imagegrid{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.imagegrid> div{
+    width: calc(50% - 40px);
+    padding: 20px;
+
+}
+
+.imagegrid>div img{
+    width: 100%;
+}
+
+.imagegrid>div:nth-child(1){
+    width: 100%;
+}
+
